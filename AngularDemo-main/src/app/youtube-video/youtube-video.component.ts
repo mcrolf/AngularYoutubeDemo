@@ -9,7 +9,9 @@ import { YTVideo } from '../yt-video';
     selector: 'app-video',
     //standalone: true,
     //imports: [CommonModule, YoutubeVideoModule],
-    template: `<iframe width="560" height="315" src="https://www.youtube.com/embed/eiSuSJyn9B8?si=JJZQr6ta984IEHlK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`,
+    template: `<video autoplay muted controls id="vid" >
+        <source src="https://d3uri9aqa5oz7e.cloudfront.net/TestVideo1.mp4" type="video/mp4">
+    </video>`,
 })
 
 export class YoutubeVideoComponent {
